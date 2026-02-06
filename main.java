@@ -8,7 +8,7 @@ public class main {
         heroe.setPuntosVida(150);
         heroe.setNivel(10);
         heroe.setAtaque(25);
-        ((guerrero) heroe).setResistencia(15);
+        ((guerrero) heroe).setResistencia(30);
         
         System.out.println(heroe.toString());
 
@@ -18,7 +18,7 @@ public class main {
         hechiero.setPuntosVida(60);
         hechiero.setNivel(10);
         hechiero.setAtaque(20);
-        ((mago) hechiero).setmana(30);
+        ((mago) hechiero).setMana(50);
 
         System.out.println(hechiero.toString());
 
@@ -27,7 +27,7 @@ public class main {
         monstruo.setPuntosVida(200);
         monstruo.setNivel(10);
         monstruo.setAtaque(30);
-        ((bestia) monstruo).setFerocidad(20);
+        ((bestia) monstruo).setFerocidad(40);
 
         System.out.println(monstruo.toString());
     }

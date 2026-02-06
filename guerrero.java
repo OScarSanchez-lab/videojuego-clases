@@ -3,20 +3,13 @@ package videojuego_clases;
 public class guerrero extends entidad {
     private int resistencia;
 
-    public void setResistencia(int ataque) {
-        resistencia = ataque;
+    public void setResistencia(int resistencia) {
+        this.resistencia = resistencia;
     }
 
     @Override
     public String toString() {
-        return "Entidad" + 
-        "[nombre=" + nombre + 
-        ", puntosVida=" + puntosVida + 
-        ", nivel=" + nivel + 
-        ", ataque=" + ataque + 
-        ", resistencia=" + resistencia + 
-        "]";
+        return super.toString() + ", resistencia=" + resistencia + "]";
     }
-     
-    
+
 }
