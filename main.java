@@ -25,5 +25,11 @@ public class main {
         monstruo.setAtaque(30);
         ((bestia) monstruo).setFerocidad(40);
         System.out.println(monstruo.toString());
+
+
+        java.util.ArrayList<entidad> entidades = new java.util.ArrayList<>();
+        entidades.add(heroe);
+        entidades.add(hechiero);
+        entidades.add(monstruo);
     }
 }
