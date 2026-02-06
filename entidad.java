@@ -54,4 +54,14 @@ public class entidad {
                 ", ataque=" + ataque +
                 "]";
     }
+
+    public String atacar() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'atacar'");
+    }
+
+    public String cartas(String string) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'cartas'");
+    }
 }
