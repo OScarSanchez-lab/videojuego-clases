@@ -36,9 +36,9 @@ public class main {
             System.out.println(e.getNombre() + " ataca con un daño de: " + e.atacar());
         }
 
-        int dañoGuerrero = ((guerrero) heroe).cartas("espada");
-        int dañoMago = ((mago) hechiero).cartas("bola de fuego");
-        int dañoBestia = ((bestia) monstruo).cartas("garra");
+        String dañoGuerrero = ((guerrero) heroe).cartas("espada");
+        String dañoMago = ((mago) hechiero).cartas("bola de fuego");
+        String dañoBestia = ((bestia) monstruo).cartas("garra");   
 
         System.out.println(heroe.getNombre() + " ataca con la carta espada y hace un daño de: " + dañoGuerrero);
         System.out.println(hechiero.getNombre() + " ataca con la carta bola de fuego y hace un daño de: " + dañoMago);
@@ -48,9 +48,9 @@ public class main {
             System.out.println(e.getNombre() + " ataca con la carta especial y hace un daño de: " + e.cartas("carta especial"));
         }
 
-        int dañoEspecialGuerrero = ((guerrero) heroe).cartas("hacha");
-        int dañoEspecialMago = ((mago) hechiero).cartas("rayo");
-        int dañoEspecialBestia = ((bestia) monstruo).cartas("embestida");
+        String dañoEspecialGuerrero = ((guerrero) heroe).cartas("hacha");
+        String dañoEspecialMago = ((mago) hechiero).cartas("rayo");
+        String dañoEspecialBestia = ((bestia) monstruo).cartas("embestida");
 
         System.out.println(heroe.getNombre() + " ataca con la carta hacha y hace un daño de: " + dañoEspecialGuerrero);
         System.out.println(hechiero.getNombre() + " ataca con la carta rayo y hace un daño de: " + dañoEspecialMago);
@@ -60,9 +60,9 @@ public class main {
             System.out.println(e.getNombre() + " ataca con la carta especial y hace un daño de: " + e.cartas("carta especial"));
         }
 
-        int dañoEspecialGuerrero2 = ((guerrero) heroe).cartas("escudo");
-        int dañoEspecialMago2 = ((mago) hechiero).cartas("escudo magico");
-        int dañoEspecialBestia2 = ((bestia) monstruo).cartas("rugido");
+        String dañoEspecialGuerrero2 = ((guerrero) heroe).cartas("escudo");
+        String dañoEspecialMago2 = ((mago) hechiero).cartas("escudo magico");
+        String dañoEspecialBestia2 = ((bestia) monstruo).cartas("rugido");
 
         System.out.println(heroe.getNombre() + " ataca con la carta escudo y hace un daño de: " + dañoEspecialGuerrero2);
         System.out.println(hechiero.getNombre() + " ataca con la carta escudo magico y hace un daño de: " + dañoEspecialMago2);

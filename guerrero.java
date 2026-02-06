@@ -12,22 +12,23 @@ public class guerrero extends entidad {
         this.resistencia = resistencia;
     }
 
-    public int atacar() {
-        return ataque + resistencia; // El ataque del guerrero se incrementa por su resistencia
+    @Override
+    public String atacar() {
+        return String.valueOf(ataque + resistencia); // El ataque del guerrero se incrementa por su resistencia
     }
 
-    public int cartas(String carta) {
+    public String cartas(String carta) {
         switch (carta) {
             case "espada":
-                return ataque * 5 + resistencia / 2; // El guerrero hace más daño con esta carta
+                return String.valueOf(ataque * 5 + resistencia / 2); // El guerrero hace más daño con esta carta
             case "hacha":
-                return ataque * 2 + resistencia; // El guerrero hace aún más daño con esta
+                return String.valueOf(ataque * 2 + resistencia); // El guerrero hace aún más daño con esta carta
             case "escudo":
-                return ataque / 2 + resistencia * 3; // El guerrero hace menos daño con esta carta
+                return String.valueOf(ataque / 2 + resistencia * 3); // El guerrero hace menos daño con esta carta
             case "armadura":
-                return ataque / 5 + resistencia * 5; // El guerrero hace mucho menos daño con esta carta
+                return String.valueOf(ataque / 5 + resistencia * 5); // El guerrero hace mucho menos daño con esta carta
             default:
-                return 0;
+                return "0";
         }
     }
     @Override
